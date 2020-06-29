@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap');
+
+
+:root{
+    --main-bg-color: #0B0C10;
+    --secondary-color: #1f2833;
+    --text-color: #C5C6C7;
+    --headers-color: #66FCF1;
+    --secondary-headers-color: #45A29E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    text-decoration: none !important;
+    /* font-family: 'Archivo', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.content-container{
+    /* Same margin as the navbar height */
+    margin-top: 40px; 
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    /* position navbar stuck to top */
+    width: 100%;
+    height: 40px;
+    top: 0;
+    overflow: hidden;
+    z-index: 20;
+    /* border-bottom: 1px solid black; */
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.64);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.64);
+}
+
+.navbar-menu{
+    margin-right: 20px;
+    text-decoration: none !important;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.nav-link{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    border: none;
+    /* padding: 10px 0 10px 0; */
+    /* height: 100%; */
+    /* margin: 10px 0 10px 0; */
+    margin-left: 10px;
+    font-size: 19px;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: color 1s linear;
+}
+
+.nav-link:hover{
+    background-color: green;
+}
+
+
+
+.active-link{
+    background-color: blue;
+}
+
+
+
+.nav-link-contact{
+    /* padding: 10px 0 10px 0; */
+    background-color: var(--main-bg-color);
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-logo{
+    background-color: white;
+    color: black;
+    /* move logo inside navbar to right away from corner */
+    margin-left: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* Navbar end */
+
+
+
+.landing{
+    /* height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.particle-background{
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 40px;
+    left: 0;
+    /* z-index: -2; */
+    
+
+}
+
+.landing-details{
+    z-index: 10;
+    background-color: rgba(31, 40, 51, 0.6);;
+    /* opacity: 0.3; */
+    text-align: center;
+    padding: 30px;
+    overflow: visible;
+    border-radius: 10px;
+}
+
+.landing-details-title{
+    padding: 10px;
+    letter-spacing: 5px;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--headers-color);
+}
+
+.landing-details-subtitle{
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.landing-details-btn{
+    padding: 20px 30px 20px 30px;
+    background-color: var(--headers-color);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.about-section{
+    
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    background-color: var(--text-color);
+    color: black;
+    font-size: 17px;
+}
+
+.about-text{
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+
+.tech-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+}
+
+.tech-item{
+    /* background-color: var(--text-color); */
+    overflow: hidden;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-icon{
+    font-size: 40px;
+}
+
+.tech-name{
+    color: black;
+}
+
+#react{
+    background-color: #61dbfb;
+    color: black;
+}
+
+#node{
+    background-color: #3C873A;
+}
+
+#html{
+    background-color: #f06529;
+}
+
+#css{
+    background-color: #2965f1;
+}
+
+#section2{
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+}
+
+#section3{
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+}
